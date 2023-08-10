@@ -11,5 +11,7 @@ BTC_PATTERN="^[a-zA-Z1-9]{2}[a-zA-Z0-9]{22,33}"
 if [[ ! -f ${FILE} ]];then
 	echo ${FILE} not found.;exit 1
 else
-	grep -Eon ${BTC_PATTERN} ${FILE} > ${OUTPUT_DEST}/btc-grep-results.txt;exit 0
+	grep -Eon ${BTC_PATTERN} ${FILE} > ${OUTPUT_DEST}/btc-grep-results.txt
+        cat ${OUTPUT_DEST}/btc-grep-results.txt
+        exit 0
 fi

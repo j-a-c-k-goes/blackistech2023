@@ -10,5 +10,7 @@ SSN_PATTERN="(([0-9]{3}[\-]|[0-9]{3}[\.]|[0-9]{3}[\s])([0-9]{2}[\-]|[0-9]{2}[\.]
 if [[ ! -f ${FILE} ]];then
 	echo ${FILE} not found.;exit 1
 else
-	grep -Eon ${SSN_PATTERN} ${FILE} > ${OUTPUT_DEST}/ssn-grep-results.txt;exit 0
+	grep -Eon ${SSN_PATTERN} ${FILE} > ${OUTPUT_DEST}/ssn-grep-results.txt;
+	cat ${OUTPUT_DEST}/ssn-grep-results.txt
+	exit 0
 fi

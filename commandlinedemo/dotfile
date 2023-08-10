@@ -1,15 +1,23 @@
-# Copy this into your config file :)
-
-# ls
-alias ls="ls -hrtla"
+# Copy into config :)
+#-----------------------------
+export PATH=/usr/local/bin$PATH
 
 # Path to blackistech2023 demo
 export PATH_TO_DEMO=~/blackistech2023/commandlinedemo
 export PATH_TO_DEMO_SCRIPTS=~/blackistech2023/commandlinedemo/scripts
 
+# ls
+alias ls="ls -hrtla"
+
+# Welcome message
+welcomemsg=${PATH_TO_SCRIPTS}/welcomemsg.sh
+
+# Voice note
+alias voicenote=${PATH_TO_DEMO_SCRIPTS}/voicenote.sh
+
 # Toggle Desk
-alias testdeskon="defaults write com.apple.finder CreateDesktop true;killall Finder"
-alias testdeskoff="defaults write com.apple.finder CreateDesktop false;killall Finder"
+alias deskon="defaults write com.apple.finder CreateDesktop true;killall Finder"
+alias deskoff="defaults write com.apple.finder CreateDesktop false;killall Finder"
 
 # Stop .DS_Store
 alias byeds="python3 ${PATH_TO_DEMO_SCRIPTS}/byeds.py"
@@ -17,45 +25,19 @@ alias stopds="defaults write.com.apple.desktopservices DSDontWriteNetworkStores 
 alias stopdsmedia="defaults write com.apple.desktopservices DSDontWriteUSBStores -bool TRUE"
 
 # Grep Aliases
+alias btcgrep="${PATH_TO_DEMO_SCRIPTS}/btcgrep.sh"
+alias ethgrep="${PATH_TO_DEMO_SCRIPTS}/ethgrep.sh
 alias emailgrep="${PATH_TO_DEMO_SCRIPTS}/emailgrep.sh"
 alias phonegrep="${PATH_TO_DEMO_SCRIPTS}/phonegrep.sh"
 alias ssngrep="${PATH_TO_DEMO_SCRIPTS}/ssngrep.sh"
 alias ipgrep="${PATH_TO_DEMO_SCRIPTS}/ipgrep.sh"
 alias moneygrep="${PATH_TO_DEMO_SCRIPTS}/moneygrep.sh"
 
-# add scripts directory to profile
-export PATH="Users/xyz/scripts/:$PATH"
-
-# Use Latest Version of Python
-alias python=/usr/local/bin/python3.11
-
-# ls
-alias ls="ls -hrtla"
-
-# Path to blackistech2023 demo
-export PATH_TO_DEMO=~/blackistech2023/commandlinedemo
-export PATH_TO_DEMO_SCRIPTS=~/blackistech2023/commandlinedemo/scripts
-
-# Toggle Desk
-alias testdeskon="defaults write com.apple.finder CreateDesktop true;killall Finder"
-alias testdeskoff="defaults write com.apple.finder CreateDesktop false;killall Finder"
-
-# Stop .DS_Store
-alias byeds="python3 ${PATH_TO_DEMO_SCRIPTS}/byeds.py"
-alias stopds="defaults write.com.apple.desktopservices DSDontWriteNetworkStores true"
-alias stopdsmedia="defaults write com.apple.desktopservices DSDontWriteUSBStores -bool TRUE"
-
-# Grep Aliases
-alias emailgrep="${PATH_TO_DEMO_SCRIPTS}/emailgrep.sh"
-alias phonegrep="${PATH_TO_DEMO_SCRIPTS}/phonegrep.sh"
-alias ssngrep="${PATH_TO_DEMO_SCRIPTS}/ssngrep.sh"
-alias ipgrep="${PATH_TO_DEMO_SCRIPTS}/ipgrep.sh"
-alias moneygrep="${PATH_TO_DEMO_SCRIPTS}/moneygrep.sh"
+# go README
+alias goreadme="${PATH_TO_DEMO_SCRIPTS}/goreadme.sh"
 
 # DNS Flush
 alias dnsflush="sudo killall -HUP mDNSResponder; sudo killall mDNSResponderHelper; sudo dscacheutil -flushcache"
 
 # SSH Keys
 alias sshkeys="ls ~/.ssh"
-
-

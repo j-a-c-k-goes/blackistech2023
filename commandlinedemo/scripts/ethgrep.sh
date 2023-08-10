@@ -13,5 +13,6 @@ if [[ ! -f ${FILE} ]];then
 	exit 1
 else
 	grep -Eon ${ETH_PATTERN} ${FILE} > ${OUTPUT_DEST}/eth-grep-results.txt
+	cat ${OUTPUT_DEST}/eth-grep-results.txt
 	exit 0
 fi

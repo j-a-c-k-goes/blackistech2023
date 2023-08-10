@@ -12,5 +12,7 @@ EMAIL_PATTERN="^${AZazPUNC}\+@${AZazPUNC2}\+\.[a-z]\{2,\}"
 if [[ ! -f ${FILE} ]];then
 	echo ${FILE} not found.;exit 1
 else
-	grep -iwn ${EMAIL_PATTERN} ${FILE} > ${OUTPUT_DEST}/email-grep-results.txt;exit 0
+	grep -iwn ${EMAIL_PATTERN} ${FILE} > ${OUTPUT_DEST}/email-grep-results.txt
+        cat ${OUTPUT_DEST}/email-grep-results.txt
+        exit 0
 fi

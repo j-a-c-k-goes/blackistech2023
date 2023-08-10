@@ -2,13 +2,12 @@
 # @name        goreadme.sh
 # @author      jack a. l., neo&&
 # @date        2023 AUGUST 05
-# @usage       goreadme.sh ${ABSOLUTE_PATH} ${README_TITLE} {CONFIG}
+# @usage       goreadme.sh ${PROJECT_PATH} ${README_TITLE}
 # @description Creates a readme via prompts.
 ####################################################################
 SCRIPT_NAME=${0}
-ABSOLUTE_PATH=${1}
+PROJECT_PATH=${1}
 README_TITLE=${2}
-CONFIG=${3}
 README_FILE="README.md"
 PROMPT_0="Short description of project:"
 PROMPT_1="What is motivating this project?"
@@ -18,12 +17,9 @@ PROMPT_4="What technologies are you using?"
 PROMPTS=(${PROMPT_0} ${PROMPT_1} ${PROMPT_2} ${PROMPT_3})
 #---------------------------------------------------------------------
 # Check if directory exists
-DIRECTORY_EXISTS="Ok great. ${ABSOLUTE_PATH} exists."
-DIRECTORY_DOES_NOT_EXIST="Oops. ${ABSOLUTE_PATH} is not present."
+DIRECTORY_EXISTS="Ok great. ${PROJECT_PATH} exists."
+DIRECTORY_DOES_NOT_EXIST="Oops. ${PROJECT_PATH} is not present."
 #---------------------------------------------------------------------
-function new_space(){ 
-	echo "" >> ${README_FILE} 
-}
 function echo_answer_into_README(){ 
 	echo ${ANSWER} >> ${README_FILE} 
 }
@@ -44,12 +40,13 @@ There a few prompts, but not so many that comlpeting them is a time suck.
 Once complete, you can tweak the file to your liking.
 ------------------------------------------------------------------------"
 }
-function run_prompt(){
+function create_README(){
 	echo "*** Creating a README.md file for '${README_TITLE}' ***"
-	cd ${ABSOLUTE_PATH}
 	touch ${README_FILE}
 	date > ${README_FILE}
 	echo "# ${README_TITLE}" >> ${README_FILE}
+}
+function run_prompt(){
 	echo "------------------------------------------------------------------------"
 	echo "*** Introduction Section Prompts ***"
 	new_space ${README_FILE}
@@ -106,11 +103,13 @@ function run_prompt(){
 	done
 }
 #-----------------------------------------------------------------
-if [[ ! -d ${ABSOLUTE_PATH} ]];then
+if [[ ! -d ${PROJECT_PATH} ]];then
 	echo ${DIRECTORY_DOES_NOT_EXIST}; script_help
 	exit 1
 else
-	echo ${DIRECTORY_EXISTS}; script_context
-	run_prompt ${ABSOLUTE_PATH} ${README_FILE} ${README_TITLE} ${PROMPT_0} ${PROMPT_1} ${PROMPT_2} ${PROMPT_3}
+	echo ${PROJECT_PATH}; script_context
+	cd ${PROJECT_PATH}
+	create_README ${README_FILE} ${README_TITLE}
+	run_prompt ${RPROJECT_PATH} ${README_TITLE} ${PROMPT_0} ${PROMPT_1} ${PROMPT_2} ${PROMPT_3}
 	cat ${README_FILE} | less
 fi
