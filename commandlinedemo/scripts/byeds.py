@@ -18,5 +18,5 @@ try:
 				else:
 					print("Deleted")
 except IndexError:
-	print("Check you arguments.")
+	print("Check your arguments.")
 	print("Scripts expects you to pass in a location on the file system.")
