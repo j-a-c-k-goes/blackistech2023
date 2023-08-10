@@ -1,0 +1,8 @@
+
+Session Name: Command Line for Control ( cmmd ln ctrl ) 
+
+Command Line For Control is about the value and joy of building simple software solutions. 
+
+The founding perspective of this session stems from a belief that modern tool chains do not have to be lengthy, intrusive, nor expensive ( consider: computing resources, data, and other overhead ). 
+
+Throughout the session, several applications and scripts will be demoed. And post-presentation, each demonstration will be available for audience members via a public repository.

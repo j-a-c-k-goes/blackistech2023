@@ -1,0 +1,25 @@
+# Request for Speaker Details, Jack A. L.
+
+JOB TITLE
+---------
+Technology & Design Lead @ Neo &&
+
+BIO
+---
+Jack is a human and multi-disciplinary designer, and embracer of both blank canvases and mass entanglements. 
+
+He is currently completing the Mechatronics Technology program @ Georgia Piedmont Technical College. 
+
+Professionally, Jack is the Technology and Design lead at Neo &&, a design foundation building niche solutions for disharmonies. 
+
+Besides being an avid reader, Jack enjoys motorcycling, making music, participating in competitions, and exploring software/hardware side projects.
+
+SESSION DESCRIPTION
+-------------------
+Session Name: Command Line for Control ( cmmd ln ctrl ) 
+
+Command Line For Control is about the value and joy of building simple software solutions. 
+
+The founding perspective of this session stems from a belief that modern tool chains do not have to be lengthy, intrusive, nor expensive ( consider: computing resources, data, and other overhead ). 
+
+Throughout the session, several applications and scripts will be demoed. And post-presentation, each demonstration will be available for audience members via a public repository.
