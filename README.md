@@ -57,7 +57,7 @@ The content includes:
 	- `<file>` is an actual file to inspect.
 	- `<output-destination>` is a directory to save results of the grep. You could always default to `
 * `goreadme.sh <absolute-path> <readme-title>`
-	- `<absolute-path>` is an abslute path to a directory. This is important! The script is built around using an absolute path.
+	- `<absolute-path>` is an absolute path to a directory. This is important! The script is built around using an absolute path.
 	- `<readme-title>` this is the `# Title` in the `README.md` file. Passing it as an argument saves from having to enter the title during the prompt loop.
 * `ipgrep.sh <file> <output-destination>`
 	- `<file>` is an actual file to inspect.
@@ -73,7 +73,7 @@ The content includes:
 	- `<voice-name>` a valid voice from the system's speech synthesis engine.
 		+ In a terminal: type `say -v "?"` to see a list of voices.
 	- `<alias>` this is the descriptor name. It is used when creating the file name.
-		+ Example. If `<alias>="thoughts-about-whales`: file will be named, `$DATE_voicnote_thoughts-about-whales.aiff`
+		+ Example. If `<alias>="thoughts-about-whales`: file will be named, `$DATE_voicenote_thoughts-about-whales.aiff`
 * `welcomemsg.sh <msg> <voice-name>`
 	- `<msg>` this is string to pass in. this it what will be translated to audio. 
 	- `<voice-name>` a valid voice from the system's speech synthesis engine.
@@ -99,4 +99,4 @@ For the scripts to work:
 	- The Linux Command Line by William E. Shotts
 	- Wicked Cool Shell Scripts by Dave Taylor, Brandom Perry
 * Test Voiceovers
-* ctrl key design
+* ctrl key design file
