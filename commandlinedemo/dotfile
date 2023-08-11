@@ -9,8 +9,11 @@ export PATH_TO_DEMO_SCRIPTS=~/blackistech2023/commandlinedemo/scripts
 # ls
 alias ls="ls -hrtla"
 
+# File inspection
+alias wtf="file --keep-going --mime-type --preserve-date"
+
 # Welcome message
-welcomemsg=${PATH_TO_SCRIPTS}/welcomemsg.sh
+alias welcomemsg=${PATH_TO_SCRIPTS}/welcomemsg.sh
 
 # Voice note
 alias voicenote=${PATH_TO_DEMO_SCRIPTS}/voicenote.sh
