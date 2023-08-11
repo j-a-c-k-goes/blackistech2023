@@ -26,7 +26,7 @@ alias stopdsmedia="defaults write com.apple.desktopservices DSDontWriteUSBStores
 
 # Grep Aliases
 alias btcgrep="${PATH_TO_DEMO_SCRIPTS}/btcgrep.sh"
-alias ethgrep="${PATH_TO_DEMO_SCRIPTS}/ethgrep.sh
+alias ethgrep="${PATH_TO_DEMO_SCRIPTS}/ethgrep.sh"
 alias emailgrep="${PATH_TO_DEMO_SCRIPTS}/emailgrep.sh"
 alias phonegrep="${PATH_TO_DEMO_SCRIPTS}/phonegrep.sh"
 alias ssngrep="${PATH_TO_DEMO_SCRIPTS}/ssngrep.sh"
