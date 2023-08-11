@@ -9,6 +9,9 @@ export PATH_TO_DEMO_SCRIPTS=~/blackistech2023/commandlinedemo/scripts
 # ls
 alias ls="ls -hrtla"
 
+# Clear terminal history and shell file 
+alias dehistory="history -c && echo '' > .bash_history"
+
 # File inspection
 alias wtf="file --keep-going --mime-type --preserve-date"
 
