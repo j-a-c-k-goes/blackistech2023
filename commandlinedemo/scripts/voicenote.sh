@@ -3,8 +3,8 @@
 # @author      jack a. l., neo&&
 # @date        2023 AUGUST 05
 # @usage       voicenote.sh <note> <voice-name> <alias>
-# @description Displays a message.
-#              Outputs this message to a .AIFF file.
+# @description Creates a voice note.
+#              Outputs this message to an .AIFF file.
 ##############################################################
 clear
 NOTE=${1}; VOICE=${2}; ALIAS=${3}
