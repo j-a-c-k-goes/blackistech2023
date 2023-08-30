@@ -3,7 +3,7 @@
 # @author      jack a. l., neo&&
 # @date        2023 AUGUST 05
 # @usage       btcgrep.sh ${FILE} {OUTPUT_DEST}
-# @description Removes .DS_Store files. 
+# @description Greps for a BTC Address pattern. 
 # @note BTC doesn't begin with 0x, is between 24-35 characters.
 #################################################
 FILE=${1};OUTPUT_DEST=${2}
