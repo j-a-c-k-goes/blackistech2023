@@ -3,7 +3,7 @@
 # @author      jack a. l., neo&&
 # @date        2023 AUGUST 09
 # @usage       ipgrep.sh ${FILE} {OUTPUT_DEST}
-# @description Greps with IP addressr pattern.
+# @description Greps with IP address pattern.
 ##############################################
 FILE=${1}; OUTPUT_DEST=${2}
 IP_PATTERN="([0-9]{1,3}[\.]){3}[0-9]{1,3}"
