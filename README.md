@@ -22,7 +22,7 @@ Modern tool chains do not have to be lengthy, intrusive, nor expensive.
 
 I did consider: computing resources, data, and other overhead.
 
-Throughout the session, several applications and scripts will be demoed. 
+Throughout the session, several scripts will be demoed. 
 
 And post-presentation, each demonstration will be available for audience members via a public repository.
 
@@ -31,7 +31,7 @@ I am an avid terminal user. This choice has transformed my computing experience.
 
 Also, I was motivated to measure what I know (and don't know) in relation to the subject. 
 
-And contextualizing my knowledge for an audience of various skill levels? Feels like an engaging challenge.
+And contextualizing my knowledge for an audience of various skill levels felt like an engaging challenge.
 
 ## What is in this Repository?
 The content includes:
@@ -41,7 +41,7 @@ The content includes:
 * PowerPoint of the presentation
 * Merch files
 * Promo files
-* Reading MAterial (USB only 😊)
+* Reading Material (USB only 😊)
 * Test videos.
 
 ## Scripts
@@ -82,15 +82,15 @@ The content includes:
 ## Installation
 For the scripts to work:
 1. leave them in the `./commandlinedemo/scripts` folder.
-2. Copy the content of `dotfile` into your configuration file (liekly `.bashrc, .zshrc, or .profile`).
+2. Copy the content of `dotfile` into your configuration file (likely `.bashrc, .zshrc, or .profile`).
 3. Source your configuration file.
-    - From a terminal: `source <your-configuration-file>`
+    - From a terminal: `source <your-configuration-file>` or `exec $SHELL`
 4. Run any script via its alias.
     - Example: `deskoff`
     - Some aliases require arguments. Refer to scripts section for arguements. Also, you could inspect the source code for any script, and reference its `@usage` callout in the header comments of the script. 
 
 ## Extras
-* Reading Materials (USB-only)
+* Reading Materials (USB-only, or message me for the .pdf)
 	- Automate the Boring Stuff with Python [Al Sweigart](https://alsweigart.com/)
 	- Cracking Codes with Python [Al Sweigart](https://alsweigart.com/)
 	- How Linux Works by Brian Ward
