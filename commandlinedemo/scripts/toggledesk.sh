@@ -15,5 +15,5 @@ if [[ ! -f ${CONFIG} ]];then
 else
 	echo alias testdeskon="\"${DESK_ON_COMMAND}\"" >> ${CONFIG}
 	echo alias testdeskoff="\"${DESK_OFF_COMMAND}\"" >> ${CONFIG}
-	source ${CONFIG}
+	echo "Please source your config file :) — command is: \"exec $SHELL\""
 fi
